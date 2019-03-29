@@ -10,7 +10,6 @@ import requests
 
 CWD = os.path.dirname(os.path.abspath(__file__))
 LOG_PATH = '{}/log/heartbeat.log'.format(CWD)
-LOG_PATH = ''
 RUN_PATH = '{}/.runtime'.format(CWD)
 ADMIN_HOST = 'http://114.55.31.211:8888/_add_proxy'
 PROXY_PORT = 8899
