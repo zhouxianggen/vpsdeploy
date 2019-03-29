@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GITHOME='https://raw.githubusercontent.com/zhouxianggen/vpsdeploy/master/vpsdeploy'
+GITHOME='https://raw.githubusercontent.com/zhouxianggen/vpsdeploy/master'
 WDIR="$HOME/deploy"
 
 if [ ! -d $WDIR ];then

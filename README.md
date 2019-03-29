@@ -4,6 +4,11 @@ vpsdeploy
 > vps deploy tool 
 
 ## `Run`
+1. 登陆vps
+```
+yum -y install wget
+wget 'https://raw.githubusercontent.com/zhouxianggen/vpsdeploy/master/deploy.sh'
+```
 
 1. set vps name
 ```
