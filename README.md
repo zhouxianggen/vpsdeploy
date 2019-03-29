@@ -7,7 +7,7 @@ vpsdeploy
 1. 登陆vps
 ```
 yum -y install wget
-wget 'https://raw.githubusercontent.com/zhouxianggen/vpsdeploy/master/deploy.sh'
+wget 'https://raw.githubusercontent.com/zhouxianggen/vpsdeploy/master/deploy.sh' -O deploy.sh
 ```
 
 1. set vps name
