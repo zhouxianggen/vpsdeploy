@@ -4,13 +4,11 @@
 import os
 from subprocess import Popen, PIPE
 import requests
-import vps_config
-import vps_utils
 
 
 CWD = os.path.dirname(os.path.abspath(__file__))
-REMOTE_VERSION = 'https://raw.githubusercontent.com/zhouxianggen/vpsdeploy/master/vpsdeploy/.version'
-DEPLOY_SCRIPT = 'https://raw.githubusercontent.com/zhouxianggen/vpsdeploy/master/vpsdeploy/deploy.sh'
+REMOTE_VERSION = 'https://raw.githubusercontent.com/zhouxianggen/vpsdeploy/master/.version'
+DEPLOY_SCRIPT = 'https://raw.githubusercontent.com/zhouxianggen/vpsdeploy/master/deploy.sh'
 
 
 def open_url(url):
@@ -30,7 +28,7 @@ def get_remote_version():
 
 def get_local_version():
     path = '{}/.version'.format(CWD)
-    if os.path.isfile():
+    if os.path.isfile(path):
         return float(open(path, 'rb').read().strip())
     return 0
 

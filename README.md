@@ -6,6 +6,8 @@ vpsdeploy
 ## `Run`
 1. 登陆vps
 ```
+yum -y install wget
+
 wget 'https://raw.githubusercontent.com/zhouxianggen/vpsdeploy/master/setuptools-23.1.0.tar.gz'
 tar -zxf setuptools-23.1.0.tar.gz
 cd setuptools-23.1.0
@@ -14,7 +16,6 @@ python setup.py install
 
 easy_install requests
 
-yum -y install wget
 wget 'https://raw.githubusercontent.com/zhouxianggen/vpsdeploy/master/deploy.sh' -O deploy.sh
 ```
 
