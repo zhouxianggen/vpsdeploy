@@ -11,6 +11,7 @@ cd setuptools-23.1.0
 python setup.py build
 python setup.py install
 
+cd -
 easy_install requests
 
 wget 'https://raw.githubusercontent.com/zhouxianggen/vpsdeploy/master/deploy.sh' -O deploy.sh

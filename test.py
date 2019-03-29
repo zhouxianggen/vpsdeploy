@@ -4,11 +4,11 @@ import requests
 
 
 url = 'https://www.cnblogs.com/dzqdzq/p/9822187.html'
-if len(sys.argv) > 1:
-    url = sys.argv[1]
 
 host = 'localhost'
-host = '144.123.70.93'
+if len(sys.argv) > 1:
+    host = sys.argv[1]
+
 proxies = {'http': 'http://{}:8899'.format(host), 
         'https': 'http://{}:8899'.format(host)}
 r = requests.get(url, proxies=proxies)
