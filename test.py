@@ -8,7 +8,7 @@ if len(sys.argv) > 1:
     url = sys.argv[1]
 
 host = 'localhost'
-host = '113.128.24.147'
+host = '144.123.70.93'
 proxies = {'http': 'http://{}:8899'.format(host), 
         'https': 'http://{}:8899'.format(host)}
 r = requests.get(url, proxies=proxies)

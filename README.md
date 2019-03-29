@@ -29,8 +29,8 @@ echo name > .name
 
 2. crontab
 ```
-*/1 * * * * cd /root/pp && sh bohao.sh >log/bohao.log 2>&1
-*/1 * * * * cd /root/pp && python heartbeat.py 
-*/1 * * * * cd /root/pp && python pyproxy.py --log-file=log/pyproxy.log 
+*/1 * * * * cd /root/deploy && sh bohao.sh >log/bohao.log 2>&1
+*/1 * * * * cd /root/deploy && python heartbeat.py 
+*/1 * * * * cd /root/deploy && python pyproxy.py --log-file=log/pyproxy.log 
 ```
 
