@@ -15,7 +15,7 @@ echo "下载服务脚本"
 wget "${GITHOME}/heartbeat.py" -O heartbeat.py
 wget "${GITHOME}/pyproxy.py" -O pyproxy.py
 wget "${GITHOME}/dog.py" -O dog.py
-wget "${GITHOME}/vps/bohao.sh" -O bohao.sh
-wget "${GITHOME}/vps/.version" -O .version
+wget "${GITHOME}/bohao.sh" -O bohao.sh
+wget "${GITHOME}/.version" -O .version
 
 echo "部署成功"
