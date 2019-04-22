@@ -67,8 +67,8 @@ def run():
         if not ip:
             return
 
-        b = {'name': get_name(), 'schemes': ['HTTP', 'HTTPS'], 'ip': get_ip(), 
-                'port': PROXY_PORT }
+        b = {'type': 'vps', 'name': get_name(), 'schemes': ['HTTP', 'HTTPS'], 
+                'ip': get_ip(), 'port': PROXY_PORT }
         log.info('send heartbeat to admin')
         try:
             r = requests.post(ADMIN_HOST, 
